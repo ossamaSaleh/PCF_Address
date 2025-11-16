@@ -15,13 +15,6 @@ As users type into the address field, the control retrieves real-time location m
 - Supports one or multiple ISO country codes.
 - Administrators can configure country filters via PCF control properties (e.g., `qa`, `ae`, `eg`).
 
-### 🏠 Automatic Address Population
-Automatically fills mapped CRM fields such as:
-- Street  
-- City  
-- District  
-- Latitude  
-- Longitude  
 
 ### 💡 Modern UI / UX
 - Clean styled input box.
@@ -59,29 +52,7 @@ Add these configurable properties in `ControlManifest.Input.xml`:
 | Property        | Description |
 |----------------|-------------|
 | `CountryCodes` | Comma-separated list of country codes (e.g., `qa`, `ae`). |
-| `MaxResults`   | Number of suggestions to return (default: 5). |
-| `StreetField`  | CRM field logical name for street. |
-| `CityField`    | CRM field logical name for city. |
-| `DistrictField`| CRM field logical name for district. |
-| `LatitudeField`| CRM field logical name for latitude. |
-| `LongitudeField`| CRM field logical name for longitude. |
 
----
-
-## 📌 Requirements
-
-- Dynamics 365 / Power Apps Model-Driven App  
-- PCF Framework  
-- Internet connection (Nominatim API)  
-- Respect Nominatim usage policy (fair-use request limits)
-
----
-
-## 📘 Notes
-
-- Nominatim is free and open-source but has rate limits.  
-- Use a *debounce* delay when calling the API to avoid excessive requests.  
-- Consider caching previous search results for faster response.
 
 ---
 
@@ -91,12 +62,5 @@ This control uses data from **OpenStreetMap** and **Nominatim**, provided under 
 
 ---
 
-If you want, I can also add:
-- 📸 Screenshots section  
-- 🧪 How to install & import into CRM  
-- 🏗️ manifest.xml sample  
-- 🧭 How to map fields in PCF  
-
-Just tell me!
 
 
